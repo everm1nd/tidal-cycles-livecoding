@@ -1,0 +1,7 @@
+d1 $ sound "[bd [sn/2 future] cp jvbass bd [sn/2 future] cp*2 cp*2]/2"
+
+d2 $ up "0 3 0 0" # sound "jvbass*8"
+
+-------- OR MORE ADVANCED
+
+d2 $ every 4 (fast 2) $ every 8 (fast 4) $ up "0 3 0 0" # sound "jvbass*8"
