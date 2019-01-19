@@ -3,10 +3,10 @@ d1 $ n "[0 .. 5] [3 .. 1]" # sound "supergong" # room 0.5 # size 0.3 # orbit 1
 d1 $ n "[0 .. 3] [4 .. 9]" # sound "supergong" # room 0.2 # size 0.1 # orbit 1
 
 -- this one gives awesome glitches with reverb after running 2 previous lines
--- because of switching in orbit of something like this
+-- because of concurring in size and room on orbit 0 with d2
 d1 $ stack $ [
-  n "[0 .. 5] [3 .. 1]" # sound "supergong",
-  n "[0 .. 3] [4 .. 9]" # sound "supergong"
+  n "[0 .. 5] [3 .. 1]" # sound "supergong" # room 0.3,
+  n "[0 .. 3] [4 .. 9]" # sound "supergong" # room 0.3
 ]
 
 d2 $ rarely (fast 2)
