@@ -1,0 +1,25 @@
+d1 $ sound "{bd bd ~ bd ~, sd:1 ~ sd:1} * 2"
+   # n "0 3 12 4 6"
+
+d2 $ often (fast 2)
+   $ every 4 (slow 2)
+   $ every 2 (# room (range 0.1 0.7 rand))
+   $ sound "hh*10"
+   # pan sine
+   # size 0.2
+
+d3 $ every 4 (# crush 4)
+   $ sound "bass(10,30)"
+   # n (irand 5)
+   -- # vowel "a e u i o"
+   -- # lpf (slow 8 $ sine * 2000 + 1500)
+   -- # resonance 0.2
+   # orbit 1
+
+d4 $ sound "bd ~ ~ bd ~ ~ bd ~ ~ bd ~ ~ bd ~ bd ~" # n 9
+
+d5 $ every 2 (# room (range 0.1 0.7 rand))
+   $ sound "hh:8*16"
+   # pan sine
+
+d6 $ sound "[~ sd]*2"
